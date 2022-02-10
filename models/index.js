@@ -12,6 +12,7 @@ Post.belongsTo(User, {
   });
 
 User.belongsToMany(Post, {
+    through:'user_post',
     foreignKey: 'user_id'
   });
 
